@@ -7,23 +7,36 @@ body{
 }
 .videos{
     background-color: #f1f1f1;
+    
 }
 .video-section{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     gap: 2em 1em;
+    border-top: 2px solid #999;
+    padding: 3em 0 3em 0;
+
+}
+.video-section:first-child{
+    border-top: none;
 }
 .video-container{
     display: flex;
     flex-direction: column;
+    
 }
 .thumbnil-img{
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 150px;
+    min-width:100%;
+    min-height:100%;
     border-radius:1%;
+    background-color: #999;
+    
 }
 .thumbnil{
     position:relative;
+    
 }
 .thumbnil::before{
     content:"20:32";
@@ -45,6 +58,7 @@ body{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  background-color: #999;
 }
 .video-meta-data{
     display: flex;
