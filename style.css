@@ -4,6 +4,7 @@
 }
 body{
     margin:0;
+    padding:1em;
 }
 .videos{
     background-color: #f1f1f1;
@@ -90,4 +91,13 @@ body{
     color:rgba(14, 11, 11, 0.8);
     font-size: .8em;
     letter-spacing: .004em;
+}
+.section-name{
+    grid-column: 1/ -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+    margin: -4em 0em -3em 0em;
+
 }
