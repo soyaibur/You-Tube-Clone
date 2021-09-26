@@ -1,11 +1,13 @@
 *, *::before, *::after{
     box-sizing: border-box;
-    font-family: roboto, helvetica , Arial, sans-serif;
+    font-family: "Roboto";
+   
 }
 body{
     margin:0;
     padding:1em;
 }
+/* Start of Main Video Section */
 .videos{
     background-color: #f1f1f1;
     
@@ -70,13 +72,10 @@ body{
 .video-meta-data a{
     text-decoration:none;
 }
-
-
 .video-title{
   color: rgba(0, 0, 0, 0.9);
-  font-weight:400;
+  font-weight: 500;
   margin-bottom:.5em;
-  
 }
 .video-meta-data .channel-name a{
   color:rgba(14, 11, 11, 0.8);
@@ -101,4 +100,42 @@ body{
     padding: 0em 1em;
     margin: -4em 0em -3em 0em;
 }
+
+
+
+/*End of Main video Section*/
+/* Start of recoment tab section */
+
+
+.recommend-section{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.recommend-section button,
+.recommend-section .active{
+    margin-right: 1em;
+    word-wrap:none;
+    white-space: nowrap;
+    padding:.5em .7em;
+    border-radius: 50px;
+    border: .1em solid #e0e0e0;
+    font-size: .7em;
+    transition: background-color 350ms ease-in-out;
+    cursor:pointer;
+}
+.recommend-section button:hover{
+    background-color: #dddbdb;
+}
+.recommend-section .active{
+    background-color: black;
+    color:white;
+}
+
+
+
+
+/* End of Recommended-section Button */
+/* Star of Header Section */
 
